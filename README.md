@@ -1,3 +1,6 @@
+# THIS REPO IS A BARE FORK OF CRYPTONOTE, DO NOT CONTAIN ANY MODIFICATIONS YET. CATON SOURCE CODE WILL BE AVAILABLE AFTER UTC 21/12/2017 16:28
+
+
 This is the reference code for [CryptoNote](https://cryptonote.org) cryptocurrency protocol.
 
 * Launch your own CryptoNote currency: [CryptoNote Starter](https://cryptonotestarter.org/)
