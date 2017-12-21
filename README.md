@@ -2,7 +2,7 @@
 
 ## Building Caton 
 
-### UBUNTU 14.04
+### UBUNTU 14.04 (build tested)
 
 Dependencies: GCC 4.7.3 or later, CMake 2.8.6 or later, and Boost 1.55.
 
