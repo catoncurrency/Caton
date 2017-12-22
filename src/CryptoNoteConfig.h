@@ -30,12 +30,12 @@ static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED
 
 //TODO Define number of blocks for block size median calculation
 const size_t   CRYPTONOTE_REWARD_BLOCKS_WINDOW               = 100;
-const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE     = 20000; //size of block (bytes) after which reward for block calculated using block size
+const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE     = 30000; //size of block (bytes) after which reward for block calculated using block size
 const size_t   CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE        = 600;
 //TODO Define number of digits
-const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 8;
+const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 12;
 //TODO Define minimum fee for transactions
-const uint64_t MINIMUM_FEE                                   = 10000;
+const uint64_t MINIMUM_FEE                                   = 1000000;
 const uint64_t DEFAULT_DUST_THRESHOLD                        = MINIMUM_FEE;
 
 //TODO Define preferred block's target time
@@ -74,8 +74,7 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 
 //TODO Put here the name of your currency
 const char     CRYPTONOTE_NAME[]                             = "caton";
-const char GENESIS_COINBASE_TX_HEX[] = "013c01ff0001bbb2baffa4c201029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101518e5bb991a58db7f4716f5af23436342877eb412c2b4f854deb4b7e6ef5a000";
-
+const char GENESIS_COINBASE_TX_HEX[] = "013c01ff0001bbb2baffa4c201029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210139fd2ffc69ac8311d735f0866c215194440216804ba614aab927318386137639";
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
 const uint8_t  BLOCK_MINOR_VERSION_0                         =  0;
@@ -102,7 +101,7 @@ const uint32_t P2P_DEFAULT_CONNECTION_TIMEOUT                = 5000;          //
 const uint32_t P2P_DEFAULT_PING_CONNECTION_TIMEOUT           = 2000;          // 2 seconds
 const uint64_t P2P_DEFAULT_INVOKE_TIMEOUT                    = 60 * 2 * 1000; // 2 minutes
 const size_t   P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT          = 5000;          // 5 seconds
-const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "8f80f9a5a434a9f1510d13336228debfee9c918ce505efe225d8c94d045fa115";
+const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "26862f8f40451e50e021fe2816249e3ac5163c6e27f1fcb3a6d3d23adead4ddc";
 
 //TODO Add here your network seed nodes
 const std::initializer_list<const char*> SEED_NODES = {
